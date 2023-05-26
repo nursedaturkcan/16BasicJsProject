@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: pink;
+}
+h1{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+    white-space: nowrap;
+    padding: 0 10px;
+}
+.container{
+    text-align: center;
+}
+.btn{
+    padding: 30px 50px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    margin: 10px;
+    font-size: 30px;
+    min-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    
+    background-size: cover;
+    color: white;
+    font-family: cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+}
+.btn:nth-child(1){
+    background-image: url("./images/snare.png");
+}
+.btn:nth-child(2){
+    background-image: url("./images/kick.png");
+}
+.btn:nth-child(3){
+    background-image: url("./images/crash.png");
+}
+.btn:nth-child(4){
+    background-image: url("./images/tom.png");
+}
+.btn:hover{
+    color: pink;
+}
+/* butona tıklandığında resimlerin büyümesi */
+.btn:active{
+    background-size: 105%;
+}

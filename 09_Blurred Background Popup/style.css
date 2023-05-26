@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-image: url("https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80");
+background-size: cover;
+text-align: center;
+transition: filter .7s;
+
+}
+.container h1{
+    color: white;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3)
+
+}
+.btn{
+    border: none;
+    cursor: pointer;
+    background-color: orangered;
+    padding: 10px 20px;
+    color: white;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.btn:hover{
+    filter: brightness(0.8);
+}
+.active.container{
+    filter: blur(5px) brightness(.7);
+}
+.popup-container{
+    position: fixed;
+    left:50%;
+    top: 30%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 200px;
+    background-image: url("https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0,.3);
+    opacity: 1;
+    transition: all .7s ;
+
+}
+.popup-container h4{
+    font-size: 30px;
+    margin: 10px 0;
+    font-family: sans-serif;
+    color: blueviolet;
+    font-weight: 900;
+   
+}
+label{
+    color: blueviolet;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.popup-btn{
+    cursor: pointer;
+    background-color: orangered;
+    border: 2px solid black;
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+
+}
+.email-input{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+
+}
+.email-input::placeholder{
+    color: lightgray;
+}
+.close-icon{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+.close-icon:hover{
+    color: orangered;
+}
+.active.popup-container{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
